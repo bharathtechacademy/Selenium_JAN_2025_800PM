@@ -1,6 +1,8 @@
 package com.creatio.crm.language.basics;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 public class CollectionsConcepts {
@@ -41,7 +43,77 @@ public class CollectionsConcepts {
 
 	public static void main(String[] args) {
 		
-		List<Integer> ids = new ArrayList<Integer>();
+		//Level 1
+		String empName1 = "Bharath";
+		int empId1=1234;
+		
+		String empName2 = "ABC";
+		int empId2=1235;
+		
+		//Level 2
+		String[] empNames = new String[3];
+		empNames[0] = "Bharath";
+		empNames[1] = "Dhilip";
+		empNames[2] = "Alekya";
+//		empNames[3] = "Aarika";
+		
+		int [] empIds = new int [3];
+		empIds[0]=1234;
+		empIds[1]=1235;
+		empIds[2]=1236;
+		
+		/**********************ArrayList*******************/
+		System.out.println("********************ArrayList*************************");
+		
+		//Syntax to Initialize: List<DataType> variable = new ArrayList<DataType>();
+		//Syntax to add data: variable.add(value);
+		//Syntax to get the data: variable.get(index);
+		//Syntax to remove the data:variable.remove(value);
+		//Syntax to get the total value : variable.size();
+		
+		// Order of Storing values:
+		// Null Values:
+		// Memory allocation:
+		
+		List<String> empNamesArrayList = new ArrayList<String>();
+		empNamesArrayList.add("Bharath");
+		empNamesArrayList.add("Dhilip");
+		empNamesArrayList.add("Alekya");
+		empNamesArrayList.add("Aarika");
+		empNamesArrayList.add("Bharath");
+		empNamesArrayList.add(null);
+		empNamesArrayList.remove("Alekya");
+		empNamesArrayList.add(1,"Swapnil");		
+		System.out.println("ArrayList Size is : "+empNamesArrayList.size());
+		System.out.println(empNamesArrayList);
+		
+		/**********************LinkedList*******************/
+		System.out.println("********************LinkedList*************************");
+		
+		//Syntax to Initialize: List<DataType> variable = new LinkedList<DataType>();
+		//Syntax to add data: variable.add(value);
+		//Syntax to get the data: variable.get(index);
+		//Syntax to remove the data:variable.remove(value);
+		//Syntax to get the total value : variable.size();
+		
+		// Order of Storing values:
+		// Null Values:
+		// Memory allocation:
+		
+		List<String> empNamesLinkedList = new LinkedList<String>();
+		empNamesLinkedList.add("Bharath");
+		empNamesLinkedList.add("Dhilip");
+		empNamesLinkedList.add("Alekya");
+		empNamesLinkedList.add("Aarika");
+		empNamesLinkedList.add("Bharath");
+		empNamesLinkedList.add(null);
+		empNamesLinkedList.remove("Alekya");
+		empNamesLinkedList.add(1,"Swapnil");		
+		System.out.println("LinkedList Size is : "+empNamesLinkedList.size());
+		System.out.println(empNamesLinkedList);
+		
+		
+		
 
 	}
 
