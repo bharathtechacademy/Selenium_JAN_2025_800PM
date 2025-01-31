@@ -295,7 +295,7 @@ public class CollectionsConcepts {
 		//Syntax to remove the data:variable.remove(value);
 		//Syntax to get the total value : variable.size();
 		
-		// Order of Storing values: Random Order
+		// Order of Storing values: R Order
 		// Null Keys: Not Allowed
 		// Null Values:Not Allowed
 		
@@ -312,8 +312,23 @@ public class CollectionsConcepts {
 //		empNamesHashtable.put(null,10);
 		empNamesHashtable.remove("Alekya");
 		System.out.println("Hashtable Size is : "+empNamesHashtable.size());
-		System.out.println(empNamesHashtable.get("KK"));
+		System.out.println(empNamesHashtable);
 
+		Map<String,String> row1 = new HashMap<String,String>();
+		row1.put("Username", "Swapnil");
+		row1.put("Password", "Swapnil123");
+		row1.put("SecretCode", "SecretCode1234");
+		
+		Map<String,String> row2 = new HashMap<String,String>();
+		row1.put("Username", "Balaji");
+		row1.put("Password", "Balaji123");
+		row1.put("SecretCode", "BalajiSecretCode1234");
+		
+		List<Map<String,String>> data = new ArrayList<Map<String,String>>();
+		data.add(row1);
+		data.add(row2);
+		
+		data.get(1).get("Password");
 
 	}
 
