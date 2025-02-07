@@ -11,8 +11,8 @@ public class JumpingStatements {
 		for (int i = 1; i <= 10; i++) {
 			
 			if(i>4 && i<8) {
-				break;
-//				continue;
+//				break;
+				continue;
 			}
 			
 			System.out.println(i);
