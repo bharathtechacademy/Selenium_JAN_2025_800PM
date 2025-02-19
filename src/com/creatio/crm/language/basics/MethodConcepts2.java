@@ -38,7 +38,7 @@ public class MethodConcepts2 {
 	}
 
 	//method with arguments
-	void launchTheBrowser(String browser,String url) {
+	public void launchTheBrowser(String browser,String url) {
 		System.out.println("Launch the "+browser+" browser");
 		System.out.println("Enter url "+url+" and launch application");
 	}

@@ -1,5 +1,8 @@
 package stringOperationsAndDataConversions;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class StringOperations {
 
 	public static void main(String[] args) {
@@ -100,6 +103,29 @@ public class StringOperations {
 		}else {
 			System.out.println("Your account is not having minimum balance");
 		}
+		
+		// Converting timestamp into String
+		SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyyhhmmss");
+		String uniqueId = sdf.format(Calendar.getInstance().getTime());
+		System.out.println(uniqueId);
+		
+		//Type casting
+		
+		//Primitive type casting
+		// byte-->short-->int-->long-->float-->double
+		int amount = 1000;
+		double Amount = amount; //Auto casting
+		
+		int amount2 = (int)Amount;
+		
+		double num = 10.99;
+		int Num = (int)num;
+		System.out.println(Num);
+		double n = Num;
+		System.out.println(n);
+		
+		//Reference type casting
+		
 		
 		
 		
