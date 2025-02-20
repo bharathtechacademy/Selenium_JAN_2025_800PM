@@ -125,7 +125,7 @@ public class StringOperations {
 		System.out.println(n);
 		
 		//Reference type casting
-		
+		System.out.println(Calendar.getInstance().getTime());
 		
 		
 		
